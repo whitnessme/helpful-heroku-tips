@@ -3,9 +3,9 @@ A list of some helpful beginner tips for navigating Heroku as an aA student.
 
 ## Table of Contents
 
- - Heroku Postgres Add-on
-     - To "drop database" / Reset:
-- Useful Manual Console Commands
+ - [Heroku Postgres Add-on](https://github.com/whitnessme/helpful-heroku-tips#heroku-postgres-add-on)
+     - [To "drop database" / Reset](https://github.com/whitnessme/helpful-heroku-tips#to-drop-database--reset)
+- [Useful Manual Console Commands](https://github.com/whitnessme/helpful-heroku-tips#useful-manual-console-commands)
 
 ---
 
@@ -52,3 +52,4 @@ heroku run -a {NAME_OF_HEROKU_APP} flask db upgrade
 heroku run -a {NAME_OF_HEROKU_APP} flask seed all
 ```
 
+[Back to top ⬆](https://github.com/whitnessme/helpful-heroku-tips#helpful-heroku-tips)
