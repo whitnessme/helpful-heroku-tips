@@ -22,6 +22,8 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 3. **Navigate to the *Settings* tab and the option you want to click is *Reset Database*.**
 ![heroku-postgres-settings](https://user-images.githubusercontent.com/89945390/168155610-3878e39f-7858-4769-bd92-045049c0ea39.png)
 
+4. **Follow the instructions to complete the reset.** 
+
 *If you are using the starter that deploys to Heroku through Github actions, then you can just push as usual and it will migrate and seed for you.* 
 
 ## Useful Manual Console Commands
