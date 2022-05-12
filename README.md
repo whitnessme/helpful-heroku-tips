@@ -1,3 +1,4 @@
+![heroku banner](https://miro.medium.com/max/1400/1*hDtj_hzXAz7Gj5eLn3goYg.png)
 # helpful-heroku-tips
 A list of some helpful beginner tips for navigating Heroku as an aA student. 
 
