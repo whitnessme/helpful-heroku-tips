@@ -25,7 +25,7 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 
 4. **Follow the instructions to complete the reset.** 
 
-*If you are using the starter that deploys to Heroku through Github actions, then you can just push as usual and it will migrate and seed for you.* 
+5. **Migrate & Seed again!** *If you are using the starter that deploys to Heroku through Github actions, then you can just push as usual and it will migrate and seed for you.* 
 
 ## Useful Manual Console Commands
 These are if you're **not** using the automatic Heroku deploy through Github actions. But can be useful if the Github actions aren't working as expected.
