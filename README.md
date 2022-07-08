@@ -6,7 +6,7 @@ A list of some helpful beginner tips for navigating Heroku as an aA student.
 
  - [Heroku Postgres Add-on](https://github.com/whitnessme/helpful-heroku-tips#heroku-postgres-add-on)
      - [To "drop database" / Reset](https://github.com/whitnessme/helpful-heroku-tips#to-drop-database--reset)
-     - [To "view and access database"](https://github.com/whitnessme/helpful-heroku-tips/edit/main/helpful-heroku-tips#to-viewaccess-heroku-postgres-database-using-the-heroku-cli)
+     - [To "view and access database"](https://github.com/whitnessme/helpful-heroku-tips/blob/main/README.md#to-viewaccess-heroku-postgres-database-using-the-heroku-cli)
 - [Useful Manual Console Commands](https://github.com/whitnessme/helpful-heroku-tips#useful-manual-console-commands)
 
 ---
