@@ -175,5 +175,10 @@ heroku run -a {NAME_OF_HEROKU_APP} flask db upgrade
 ```bash
 heroku run -a {NAME_OF_HEROKU_APP} flask seed all
 ```
-
+```
+heroku logs -a {NAME_OF_HEROKU_APP}
+```
+```
+heroku restart && heroku pg:reset DATABASE --confirm <appName>
+```
 [Back to top ⬆](https://github.com/whitnessme/helpful-heroku-tips#helpful-heroku-tips)
