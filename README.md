@@ -7,8 +7,8 @@ A list of some helpful beginner tips for navigating Heroku as an aA student.
  - [Heroku Postgres Add-on](https://github.com/whitnessme/helpful-heroku-tips#heroku-postgres-add-on)
      - [To "drop database" / Reset](https://github.com/whitnessme/helpful-heroku-tips#to-drop-database--reset)
  - [File Locations and Paths for Images](https://github.com/whitnessme/helpful-heroku-tips#file-locations-and-paths-for-images)
-     - [For `img` Tags](https://github.com/whitnessme/helpful-heroku-tips#-for-img--tags-)
-     - [For Using CSS property `background-image`](https://github.com/whitnessme/helpful-heroku-tips#-for-img--tags-)
+     - [For `img` tags](https://github.com/whitnessme/helpful-heroku-tips#-for-img--tags-)
+     - [For Using CSS property `background-image`](https://github.com/whitnessme/helpful-heroku-tips#-for-using-css-property-background-image)
 - [Useful Manual Console Commands](https://github.com/whitnessme/helpful-heroku-tips#useful-manual-console-commands)
 
 ---
