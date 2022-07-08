@@ -6,10 +6,12 @@ A list of some helpful beginner tips for navigating Heroku as an aA student.
 
  - [Heroku Postgres Add-on](https://github.com/whitnessme/helpful-heroku-tips#heroku-postgres-add-on)
      - [To "drop database" / Reset](https://github.com/whitnessme/helpful-heroku-tips#to-drop-database--reset)
-     - [To "view and access database"](https://github.com/whitnessme/helpful-heroku-tips/blob/main/README.md#to-viewaccess-heroku-postgres-database-using-the-heroku-cli)
+     - [To "view and access database"](https://github.com/whitnessme/helpful-heroku-tips#to-viewaccess-heroku-postgres-database-using-the-heroku-cli)
+         - [Useful psql commands](https://github.com/whitnessme/helpful-heroku-tips#useful-psql-commands)
+         - [Useful SQL commands](https://github.com/whitnessme/helpful-heroku-tips#useful-sql-commands)
 - [File Locations and Paths for Images](https://github.com/whitnessme/helpful-heroku-tips#file-locations-and-paths-for-images)
-     - [For `img` tags](https://github.com/whitnessme/helpful-heroku-tips#-for-img--tags-)
-     - [For Using CSS property `background-image`](https://github.com/whitnessme/helpful-heroku-tips#-for-using-css-property-background-image)
+     - [For `img` tags](https://github.com/whitnessme/helpful-heroku-tips#for-img--tags-)
+     - [For Using CSS property `background-image`](https://github.com/whitnessme/helpful-heroku-tips#for-using-css-property-background-image)
 - [Useful Manual Console Commands](https://github.com/whitnessme/helpful-heroku-tips#useful-manual-console-commands)
 
 ---
@@ -49,7 +51,9 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 
 5. **You should now have access to view the database for the Heroku app. This is incredibly useful when you are migrating and seeding data for your tables and you want to ensure the database is what you expect it to look like.**
 
-6. **Useful Psql commands**
+---
+
+#### Useful psql commands
 ```
 \c dbname	Switch connection to a new database
 ```
@@ -66,7 +70,9 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 \q	Exit psql shell
 ```
 
-7. **Useful SQL commands**
+---
+
+#### Useful SQL commands
 ```
 SELECT select_list FROM table_name;
 ```
@@ -76,13 +82,14 @@ SELECT select_list1, select_list2, select_list3 FROM table_name;
 ``` *For selecting all columns from the database, use asterisk(‘*’) as below:*
 SELECT * FROM table_name;
 ```
+
 ---
 
-## Image Locations in Files 📂
+## File Locations and Paths for Images
 > Heroku can be quite picky on where it will read image files in your repo. Here are a couple of solutions I've used.
 
 ### For `<img />` tags: 🖼
-1. Create a `static` directory in the `public` file to hold your image files. 
+1. **Create a `static` directory in the `public` file to hold your image files.**
 ```
 react-app
 ├── ...
@@ -95,12 +102,12 @@ react-app
 │   └── ...
 └── ...
 ```
-2. In your JSX, make an `img` tag with an src linked to the specific file in `static`.
+2. **In your JSX, make an `img` tag with an src linked to the specific file in `static`.**
     - Tailor how many `..`'s you need to get out of the component directories. 
 ```
 <img alt="knight painting icon" className="user-icon" src="../../../../static/knight_painting_crop.png"></img>
 ```
-For the above, my `src` file structure looked like:
+*For the above, my `src` file structure looked like:*
 ```
 src
 ├── components
@@ -111,8 +118,10 @@ src
 └── ...
 ```
 
+---
+
 ### For Using CSS property `background-image`:
-1. Create an `images` directory in `src` to store the image files in:
+1. **Create an `images` directory in `src` to store the image files in:**
 ```
 src
 ├── components
@@ -121,7 +130,7 @@ src
 |    └── // image files here
 └── ...
 ```
-2. Create a JSX div or other element to have the image as the background.
+2. **Create a JSX div or other element to have the image as the background.**
     - This can be an empty div but remember to give it a height and width.
 ```
 <div className='landing-page-container'>
@@ -129,14 +138,14 @@ src
             <h4 className='slogan'>Flashcards for adventurers!</h4>
 </div>
 ```
-3. Put the CSS property on the specific element.
+3. **Put the CSS property on the specific element.**
 ```
 .landing-page-container {
     ... // code removed for brevity
     background-image: url("../../images/A_Young_Man_Reading_by_Candlelight.jpg");
 }
 ```
-For the above, the path in my components is:
+*For the above, my `src` file structure looked like:*
 ```
 src
 ├── components
