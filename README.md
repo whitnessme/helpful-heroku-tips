@@ -6,6 +6,7 @@ A list of some helpful beginner tips for navigating Heroku as an aA student.
 
  - [Heroku Postgres Add-on](https://github.com/whitnessme/helpful-heroku-tips#heroku-postgres-add-on)
      - [To "drop database" / Reset](https://github.com/whitnessme/helpful-heroku-tips#to-drop-database--reset)
+ - [File Locations and Paths for Images](https://github.com/whitnessme/helpful-heroku-tips#file-locations-and-paths-for-images)
 - [Useful Manual Console Commands](https://github.com/whitnessme/helpful-heroku-tips#useful-manual-console-commands)
 
 ---
@@ -29,7 +30,7 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 
 ---
 
-##  Image Locations in Files 
+##  File Locations and Paths for Images
 > Heroku can be quite picky on where it will read image files in your repo. Here are a couple of solutions I've used.
 
 ### ◼ For `<img />` tags: 🖼
