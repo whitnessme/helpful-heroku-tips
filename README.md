@@ -6,9 +6,7 @@ A list of some helpful beginner tips for navigating Heroku as an aA student.
 
  - [Heroku Postgres Add-on](https://github.com/whitnessme/helpful-heroku-tips#heroku-postgres-add-on)
      - [To "drop database" / Reset](https://github.com/whitnessme/helpful-heroku-tips#to-drop-database--reset)
- - [File Locations and Paths for Images](https://github.com/whitnessme/helpful-heroku-tips#file-locations-and-paths-for-images)
-     - [For `img` tags](https://github.com/whitnessme/helpful-heroku-tips#-for-img--tags-)
-     - [For Using CSS property `background-image`](https://github.com/whitnessme/helpful-heroku-tips#-for-using-css-property-background-image)
+     - [To "view and access database"](https://github.com/whitnessme/helpful-heroku-tips/edit/main/README.md#to-viewaccess-heroku-postgres-database-using-the-heroku-cli)
 - [Useful Manual Console Commands](https://github.com/whitnessme/helpful-heroku-tips#useful-manual-console-commands)
 
 ---
@@ -32,10 +30,28 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 
 ---
 
-##  File Locations and Paths for Images
+### To "view/access" Heroku Postgres Database Using the Heroku CLI
+
+1. **Click on the specific app you want to access data and click on the *Resources* tab.** 
+![heroku nav](https://user-images.githubusercontent.com/89945390/168140727-f38df5cd-1ea2-45a6-842c-a35e5f4cb6bd.png)
+
+2. **Click on *Heroku Postgres.***
+![Postgres add-on](https://user-images.githubusercontent.com/89945390/168141005-1e2cbe9c-01a1-4bbe-9c1b-2f7ba630f0c8.png)
+
+3. **Navigate to the *Settings* tab and then click on *View Credentials*.**
+![heroku-postgres-settings](https://user-images.githubusercontent.com/76798385/178045579-9f242e6e-45b1-4f66-9bd8-b4db477a906d.png)
+
+4. **Copy and paste the Heroku CLI into your teminal**
+![Screenshot 2022-07-08 140256](https://user-images.githubusercontent.com/76798385/178047829-49b6e306-ddc8-4f05-911c-6c533f18be95.png)
+
+5. **You should now have access to view the database for the Heroku app. This is incredibly useful when you are migrating and seeding data for your tables and you want to ensure the database is what you expect it to look like.**
+
+---
+
+## Image Locations in Files 📂
 > Heroku can be quite picky on where it will read image files in your repo. Here are a couple of solutions I've used.
 
-### ◼ For `<img />` tags: 🖼
+### For `<img />` tags: 🖼
 1. Create a `static` directory in the `public` file to hold your image files. 
 ```
 react-app
@@ -65,7 +81,7 @@ src
 └── ...
 ```
 
-### ◼ For Using CSS property `background-image`:
+### For Using CSS property `background-image`:
 1. Create an `images` directory in `src` to store the image files in:
 ```
 src
