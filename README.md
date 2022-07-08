@@ -27,6 +27,69 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 
 5. **Migrate & Seed again!** *If you are using the starter that deploys to Heroku through Github actions, then you can just push as usual and it will migrate and seed for you.* 
 
+---
+
+## Image Locations in Files
+> Heroku can be quite picky on where it will read image files in your repo. Here are a couple of solutions I've used.
+
+### For `<img />` tags:
+1. Create a `static` directory in the `public` file to hold your image files. 
+```
+react-app
+├── ...
+├── public
+│   ├── static
+|   |    └── // image files here
+│   ├── favicon.ico
+│   └── index.html
+├── src
+│   └── ...
+└── ...
+```
+2. In your JSX, make an `img` tag with an src linked to the specific file in `static`.
+    - Tailor how many `..`'s you need to get out of the component directories. 
+```
+<img alt="knight painting icon" className="user-icon" src="../../../../static/knight_painting_crop.png"></img>
+```
+For the above, my `src` file structure looked like:
+```
+src
+├── components
+│   ├── ...
+│   ├── Dashboard
+│   │   └── UserBar.js
+│   └── ...
+└── ...
+```
+
+### For Using CSS property `background-image`:
+1. Create an `images` directory in `src` to store the image files in:
+```
+src
+├── components
+├── context
+├── images
+|    └── // image files here
+└── ...
+```
+2. Create a JSX div or other element to have the image as the background.
+    - This can be an empty div but remember to give it a height and width.
+```
+<div className='landing-page-container'>
+            <pre className='welcome-msg'>{msg}</pre>
+            <h4 className='slogan'>Flashcards for adventurers!</h4>
+</div>
+```
+3. Put the CSS property on the specific element.
+```
+.landing-page-container {
+    ... // code removed for brevity
+    background-image: url("../../images/A_Young_Man_Reading_by_Candlelight.jpg");
+}
+```
+
+---
+
 ## Useful Manual Console Commands
 These are if you're **not** using the automatic Heroku deploy through Github actions. But can be useful if the Github actions aren't working as expected.
 *(Pease put a question up in the question-channel if there's problems so TA's can figure out what's going on and provide tips for other students)*
