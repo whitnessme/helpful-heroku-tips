@@ -57,9 +57,6 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 \dt	List available tables
 ```
 ```
-\d table_name	Describe a table such as a column, type, modifiers of columns, etc.
-```
-```
 \du	List all users and their assign roles
 ```
 ```
