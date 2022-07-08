@@ -29,10 +29,10 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 
 ---
 
-## Image Locations in Files 📂
+##  Image Locations in Files 
 > Heroku can be quite picky on where it will read image files in your repo. Here are a couple of solutions I've used.
 
-### For `<img />` tags: 🖼
+### ◼ For `<img />` tags: 🖼
 1. Create a `static` directory in the `public` file to hold your image files. 
 ```
 react-app
@@ -62,7 +62,7 @@ src
 └── ...
 ```
 
-### For Using CSS property `background-image`:
+### ◼ For Using CSS property `background-image`:
 1. Create an `images` directory in `src` to store the image files in:
 ```
 src
