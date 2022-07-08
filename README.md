@@ -46,6 +46,36 @@ Instead of removing the postgres add-on to completely wipe one's database, follo
 
 5. **You should now have access to view the database for the Heroku app. This is incredibly useful when you are migrating and seeding data for your tables and you want to ensure the database is what you expect it to look like.**
 
+6. **Useful Psql commands**
+```
+\c dbname	Switch connection to a new database
+```
+```
+\l	List available databases
+```
+```
+\dt	List available tables
+```
+```
+\d table_name	Describe a table such as a column, type, modifiers of columns, etc.
+```
+```
+\du	List all users and their assign roles
+```
+```
+\q	Exit psql shell
+```
+
+7. **Useful SQL commands**
+```
+SELECT select_list FROM table_name;
+```
+```
+SELECT select_list1, select_list2, select_list3 FROM table_name;
+```
+``` *For selecting all columns from the database, use asterisk(‘*’) as below:*
+SELECT * FROM table_name;
+```
 ---
 
 ## Image Locations in Files 📂
