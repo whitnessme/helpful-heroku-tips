@@ -193,4 +193,7 @@ heroku logs -a {NAME_OF_HEROKU_APP}
 ```
 heroku restart && heroku pg:reset DATABASE --confirm {NAME_OF_HEROKU_APP}
 ```
+```
+heroku run -a {NAME_OF_HEROKU_APP} printenv
+```
 [Back to top ⬆](https://github.com/whitnessme/helpful-heroku-tips#helpful-heroku-tips)
